@@ -159,10 +159,3 @@ class Minigotchi(plugins.Plugin):
                 self.ser = None
 
         logging.info("[Minigotchi]: Plugin unloaded")
-
-    # https://stackoverflow.com/questions/37472361/how-do-i-check-if-a-string-is-a-negative-number-before-passing-it-through-int
-    def isInteger(self, string):
-        if string[0] == '-': #if a negative number
-            return string[1:].isdigit()
-        else:
-            return string.isdigit()
