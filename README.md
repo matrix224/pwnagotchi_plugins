@@ -44,6 +44,7 @@ This is a plugin for connecting to your [minigotchi](https://github.com/dj1ch/mi
 4. You should test the minigotchi first to ensure it's working as expected before proceeding (watch its serial output and see that it's actually running)
 
 You can power your minigotchi externally, or possibly from the power pins on your pwnagotchi if it's strong enough. I've gotten away with powering a NodeMCU ESP8266 from the 5v pin on my Pi 4B, but **I cannot guarantee that will work for all scenarios, and I take no responsibility if you damage your devices doing so.**
+If you do power your minigotchi externally, remember **it must have a common ground with the pi**. 
 
 After you've followed all the steps from above, you can connect your minigotchi to your pwnagotchi however you intend to (GPIO serial, USB UART, arcane magic, etc). Once it is connected and the minigotchi is powered up, enable the minigotchi plugin on your pwnagotchi.
 
